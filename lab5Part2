@@ -18,7 +18,8 @@ agent any
     // Archive the build output artifacts.
      archiveArtifacts artifacts: 'output/*.txt', excludes: 'output/*.md'
      }
-   stage('name: Interactive input') {
+     }
+   stage('Interactive input') {
     steps {
      input 'Check syntax in pipeline'
      }
